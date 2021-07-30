@@ -13,6 +13,6 @@ class AllowancesTableSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\Allowance::factory()->count(20)->create(); 
+        \App\Models\Allowance::factory()->count(10)->create(); 
     }
 }
