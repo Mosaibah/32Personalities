@@ -15,6 +15,7 @@ class CreateEmployeeAllowances extends Migration
     {
         Schema::create('employee_allowances', function (Blueprint $table) {
             \Illuminate\Support\Facades\DB::statement('SET SESSION sql_require_primary_key=0'); 
+            // in DigitalOeacen you must add this line ^^, otherwise you can commet it.
 
             $table->foreignId('employee_id');
             $table->foreignId('allowance_id');

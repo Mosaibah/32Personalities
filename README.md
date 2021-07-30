@@ -4,6 +4,11 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 ### to install project
 - composer install
 - php artisan migrate
-- php artisan db:seed --class=EmployeesTableSeeder
-- php artisan db:seed --class=AllowancesTableSeeder
+- php artisan db:seed --class=DatabaseSeeder
+
+by defualt in after seed
+email: admin@admin.com
+passwrod: admin123
+
+
 

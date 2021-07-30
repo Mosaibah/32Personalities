@@ -15,7 +15,7 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             \Illuminate\Support\Facades\DB::statement('SET SESSION sql_require_primary_key=0'); 
-
+            // in DigitalOeacen you must add this line ^^, otherwise you can commet it.
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
